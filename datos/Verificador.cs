@@ -58,5 +58,22 @@ namespace datos
             }
             return e;
         }
+
+        public bool esNumero(string a)
+        {
+            Boolean e = false;
+            Regex t = new Regex("[(cero)|(uno)|(dos)|(tres)|(cuatro)|(cinco)|(seis)|(siete)|(ocho)|(nueve)]", RegexOptions.IgnoreCase);
+            Match r = t.Match(a.ToLower());
+            if (r.Success)
+            {
+                e = true;
+                MessageBox.Show("Si es Numero");
+            }
+            else
+            {
+                MessageBox.Show("No es Numero");
+            }
+            return e;
+        }
     }
 }

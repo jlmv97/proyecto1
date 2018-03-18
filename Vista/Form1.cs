@@ -25,6 +25,7 @@ namespace Vista
             oa.esEntero(textBox1.Text);
             oa.esDecimal(textBox2.Text);
             oa.esEdad(textBox3.Text);
+            oa.esNumero(textBox4.Text);
         }
     }
 }
